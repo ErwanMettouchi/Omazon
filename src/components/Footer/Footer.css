@@ -1,0 +1,113 @@
+@media screen and (min-width: 0px) {
+  footer {
+    color: var(--main-lowest);
+    .footer-top {
+      min-width: 100%;
+      background-color: var(--main-medium);
+      color: var(--main-lowest);
+      font-weight: var(--font-regular);
+      font-size: 1.3rem;
+      cursor: pointer;
+      padding: 1rem;
+      border: none;
+      text-align: center;
+    }
+
+    .footer-cta {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 1rem;
+      background-color: var(--main-high);
+      color: var(--main-lowest);
+      font-weight: var(--font-regular);
+
+      button {
+        padding: 1rem;
+        border-radius: 10px;
+        background-color: var(--button-primary-active-background);
+        border: 1px solid var(--button-primary-default-border);
+        cursor: pointer;
+        color: var(--main-highest);
+        font-size: 1.3rem;
+        font-weight: var(--font-regular);
+
+        &:hover {
+          background-color: var(--button-primary-hover-background);
+          border: 1px solid var(--button-primary-hover-border);
+        }
+        &:active {
+          background-color: var(--button-primary-active-background);
+          border: 1px solid var(--button-primary-active-border);
+        }
+      }
+    }
+
+    .footer-cta-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 3rem;
+      padding: 5rem 0;
+      width: 100%;
+
+      h2 {
+        font-size: calc(var(--text-heading) - 0.2rem);
+        font-weight: var(--font-bold);
+        text-align: center;
+      }
+
+      p {
+        font-size: var(--text-medium);
+        font-weight: var(--font-regular);
+        text-align: center;
+        line-height: 1.4;
+      }
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem;
+      border-top: 1px solid var(--main-medium);
+      width: 100%;
+
+      img {
+        max-width: 10rem;
+      }
+    }
+
+    .footer-legals {
+      background-color: var(--main-higher);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 3rem;
+
+      ul {
+        padding: 2rem;
+        font-weight: var(--font-regular);
+        font-size: 1.3rem;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        flex-wrap: wrap;
+        list-style: none;
+        gap: 5rem;
+        width: 100%;
+        border-bottom: 1px solid var(--main-medium);
+      }
+
+      p {
+        width: 100%;
+        text-align: center;
+        font-size: var(--text-small);
+        padding: 2rem;
+      }
+    }
+  }
+}

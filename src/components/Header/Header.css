@@ -1,0 +1,26 @@
+@media screen and (min-width: 0px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-high);
+    padding: 2rem 1rem 1rem 1rem;
+    gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 300px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    flex-wrap: nowrap;
+    padding: 3rem 1rem;
+    background-color: var(--main-higher);
+  }
+}

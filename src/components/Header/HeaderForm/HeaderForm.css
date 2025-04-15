@@ -1,0 +1,72 @@
+@media screen and (min-width: 0px) {
+  .header-form {
+    width: 100%;
+    order: 1;
+
+    form {
+      display: flex;
+      justify-content: center;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.8rem 0.4rem;
+      border-bottom-left-radius: 5px;
+      border-top-left-radius: 5px;
+      border: none;
+      font-size: var(--text-small);
+      outline: none;
+    }
+
+    button {
+      background-color: var(--button-primary-active-background);
+      border: none;
+      padding: 0.5rem;
+      border-bottom-right-radius: 5px;
+      border-top-right-radius: 5px;
+      outline: none;
+      cursor: pointer;
+    }
+
+    select {
+      display: none;
+      outline: none;
+    }
+
+    button:focus,
+    select:focus,
+    input:focus {
+      outline: 2px solid var(--button-primary-default-border);
+      border-radius: 5px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 4;
+    width: auto;
+    form {
+      width: 90%;
+    }
+    input {
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+      width: 100%;
+      padding: 1.2rem 0.4rem;
+    }
+
+    select {
+      display: block;
+      background-color: var(--main-lower);
+      color: var(--brand-grey);
+      border: none;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      font-size: var(--text-small);
+    }
+  }
+}

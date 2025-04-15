@@ -1,0 +1,31 @@
+@media screen and (min-width: 0px) {
+  .header-logo {
+    flex: 1;
+    order: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      max-width: 10rem;
+    }
+  }
+}
+
+@media screen and (min-width: 300px) {
+  .header-logo {
+    justify-content: left;
+    img {
+      max-width: 12rem;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-logo {
+    justify-content: left;
+    img {
+      max-width: 15rem;
+    }
+  }
+}
