@@ -1,2 +1,2 @@
 # Omazon
-Site fait durant ma formation à l'école O'clock. Tout est fait par moi-même.
+Site copie d'Amazon fait durant ma formation chez O'Clock
