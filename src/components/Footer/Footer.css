@@ -25,8 +25,8 @@
 
       button {
         padding: 1rem;
-        border-radius: 10px;
-        background-color: var(--button-primary-active-background);
+        border-radius: 8px;
+        background-color: var(--button-primary-default-background);
         border: 1px solid var(--button-primary-default-border);
         cursor: pointer;
         color: var(--main-highest);

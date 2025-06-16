@@ -1,7 +1,12 @@
 import { Link } from "react-router";
 import "./HeaderMenu.css";
+import type { IProducts } from "../../../@types/index.d";
 
-export default function () {
+interface IHeaderMenuProps {
+  cartProducts: IProducts[];
+}
+
+export default function ({ cartProducts }: IHeaderMenuProps) {
   return (
     <div className="header-nav-right">
       <div className="header-nav-right-account">
@@ -19,7 +24,13 @@ export default function () {
       <div className="header-nav-right-cart">
         <Link className="header-nav-right-cart-icon" to="/cart">
           <img src="/resources/icons/cart.svg" alt="Panier" />
-          <span className="cart-count">0</span>
+          <span
+            className={`cart-count ${
+              cartProducts.length > 9 ? "high-length" : ""
+            }`}
+          >
+            {cartProducts.length > 9 ? "9+" : String(cartProducts.length)}
+          </span>
         </Link>
         <Link to="/cart" className="header-nav-right-cart-link">
           Panier

@@ -19,7 +19,7 @@
     }
 
     button {
-      background-color: var(--button-primary-active-background);
+      background-color: var(--button-primary-default-background);
       border: none;
       padding: 0.5rem;
       border-bottom-right-radius: 5px;

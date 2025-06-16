@@ -68,6 +68,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   img {
     background-color: transparent;
@@ -79,6 +80,40 @@
     &:hover {
       transform: scale(1.1);
     }
+  }
+
+  .product-tag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: var(--font-bold);
+    font-size: var(--text-small);
+    padding: 0.5rem 2rem 0.5rem 0.5rem;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+
+    span {
+      color: var(--brand-primary);
+    }
+  }
+
+  .new {
+    background-color: var(--brand-grey);
+    color: var(--main-lowest);
+  }
+
+  .flash {
+    background-color: var(--danger-medium);
+    color: var(--main-lowest);
+  }
+
+  .best-seller {
+    background-color: var(--brand-primary);
+    color: var(--main-lowest);
+  }
+
+  .choice {
+    background-color: var(--main-high);
+    color: var(--main-lowest);
   }
 }
 

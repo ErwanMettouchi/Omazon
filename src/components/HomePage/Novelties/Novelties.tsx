@@ -1,8 +1,13 @@
 import { Link } from "react-router";
 import products from "../../../data/products.json";
 import "./Novelties.css";
+import type { IProducts } from "../../../@types/index.d";
 
-export default function Novelties() {
+interface INoveltiesProps {
+  addProduct: (product: IProducts) => void;
+}
+
+export default function Novelties({ addProduct }: INoveltiesProps) {
   return (
     <div className="novelties">
       <h2 className="section-title">Nouveautés</h2>
@@ -31,7 +36,9 @@ export default function Novelties() {
                   {product.price.toFixed(2).split(".")[1]} €
                 </sup>
               </p>
-              <button type="button">Ajouter au panier</button>
+              <button type="button" onClick={() => addProduct(product)}>
+                Ajouter au panier
+              </button>
             </article>
           );
         })}

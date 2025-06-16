@@ -8,8 +8,7 @@
 
     .header-nav-right-account-link-logo {
       img {
-        width: 2.5rem;
-        height: 2.5rem;
+        height: 4rem;
       }
     }
 
@@ -17,16 +16,18 @@
       position: relative;
 
       img {
-        width: 3.8rem;
-        height: 3.8rem;
+        height: 4rem;
       }
 
-      span {
+      .cart-count {
         position: absolute;
-        top: 0;
+        top: -3.5rem;
         color: var(--brand-primary);
-        font-size: var(--text-large);
-        left: 17px;
+        font-size: 2.2rem;
+        left: 24px;
+      }
+      .cart-count.high-length {
+        left: 14px;
       }
     }
     .header-nav-right-cart-link {
